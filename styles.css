@@ -32,10 +32,11 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
   background: var(--bg-color);
   border: 5px solid rgba(156, 241, 241, 0.1);
   border-radius: 64px;
+  max-width: 588px;
   margin: 56px auto 0px;
   padding: 24px 24px;
 }
