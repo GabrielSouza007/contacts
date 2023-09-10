@@ -23,6 +23,7 @@
 body {
   /*Colocada em uma unica propriedade shorthand/atalho*/
   background: var(--bg-color) no-repeat top center/cover;
+  height: 90vh;
 }
 
 body * {
@@ -118,5 +119,15 @@ ul li a {
 ul li a:hover {
   background-color: rgba(255, 255, 255, 0.3);
   border: 1.5px solid var(--text-color);
+}
+
+/*media queries*/
+@media(min-width: 700px){
+  :root{
+    --bg-color:#578aac;
+  }
+  .dark{
+    --bg-color:#202124;
+  }
 }
 
