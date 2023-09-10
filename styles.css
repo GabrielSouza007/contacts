@@ -58,6 +58,7 @@ body * {
   left: 0;
   z-index: 1;
   transform: translateY(-50%);
+  animation: switch-slide-out 0.4s;
 }
 
 #switch span {
@@ -70,9 +71,7 @@ body * {
 }
 
 .dark #switch button{
-   right: 0;
-   left: initial;
- 
+  animation: switch-slide-in 0.4s forwards;
 }
 
 /* Perfil */
@@ -128,6 +127,25 @@ ul li a:hover {
   }
   .dark{
     --bg-color:#202124;
+  }
+}
+
+/* animações */
+@keyframes switch-slide-in{
+  from{
+    left:0;
+  }
+  to{
+    left:50%;
+  }
+}
+
+@keyframes switch-slide-out{
+  from{
+    left: 50%;
+  }
+  to{
+    left: 0;
   }
 }
 
