@@ -59,6 +59,7 @@ body * {
   z-index: 1;
   transform: translateY(-50%);
   animation: switch-slide-out 0.4s;
+  cursor: pointer;
 }
 
 #switch span {
